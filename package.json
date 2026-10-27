@@ -1,0 +1,56 @@
+{
+  "name": "dsh-plugin-boss-zhipin",
+  "version": "5.9.1",
+  "description": "DeepSeek Harness plugin that registers the BOSS直聘 automated job-application skill. External runtime dependency: Kimi WebBridge daemon on 127.0.0.1:10086 with a connected browser extension (not bundled).",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skill",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-skill",
+    "boss-zhipin",
+    "job-application",
+    "automation",
+    "kimi-webbridge"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1bailan/dsh-plugin-boss-zhipin.git"
+  },
+  "homepage": "https://github.com/1bailan/dsh-plugin-boss-zhipin#readme",
+  "bugs": {
+    "url": "https://github.com/1bailan/dsh-plugin-boss-zhipin/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.0-0 <0.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.0-0 <0.3.0"
+  }
+}

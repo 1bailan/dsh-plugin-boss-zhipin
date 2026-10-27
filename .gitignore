@@ -1,0 +1,7 @@
+node_modules/
+__pycache__/
+*.pyc
+boss-run/
+user_profile.json
+*.log
+.DS_Store
